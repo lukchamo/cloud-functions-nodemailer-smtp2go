@@ -27,11 +27,11 @@ app.post('/',  (req, res) => {
 
     const transporter = nodemailer.createTransport({
         host: 'mail.smtp2go.com',
-        port: '465',
-        secure: true,
+        port: '465', // puerto 25: para prueba en local
+        secure: true, // false: para prueba en local
         auth: {
-            user: "liquidador",
-            pass: "NDM0eHUwaHB5M3cw"
+            user: "xxxxxx",
+            pass: "xxxxxxx"
         }
     });
 
